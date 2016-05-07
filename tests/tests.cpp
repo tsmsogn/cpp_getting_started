@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <gtest/gtest.h>
 
 TEST(sizeof, test1) {
@@ -35,4 +36,14 @@ TEST(array, test1) {
 
     EXPECT_EQ(1, foo[0]);
     EXPECT_EQ(0, foo[1]);
+}
+
+TEST(array, sorting) {
+    int foo[3] = {1, 3, 2};
+
+    std::sort(foo, foo + 3);
+
+    EXPECT_EQ(1, foo[0]);
+    EXPECT_EQ(2, foo[1]);
+    EXPECT_EQ(3, foo[2]);
 }
