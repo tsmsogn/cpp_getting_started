@@ -20,7 +20,7 @@ TEST(memcpy, test1) {
     EXPECT_EQ(3, b[2]);
 }
 
-TEST(std, swap) {
+TEST(swap, test1) {
     int a = 1;
     int b = 2;
 
@@ -28,4 +28,11 @@ TEST(std, swap) {
 
     EXPECT_EQ(2, a);
     EXPECT_EQ(1, b);
+}
+
+TEST(array, test1) {
+    int foo[2] = {1};
+
+    EXPECT_EQ(1, foo[0]);
+    EXPECT_EQ(0, foo[1]);
 }
