@@ -44,6 +44,7 @@ add_executable(
     tests/tests.cpp
     tests/algoritm_tests.cpp
     tests/cstring_tests.cpp
+    tests/stack_tests.cpp
     )
 
 add_dependencies(unit_tests googletest)
