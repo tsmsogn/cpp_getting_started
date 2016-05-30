@@ -20,3 +20,11 @@ TEST(swap, test1) {
     EXPECT_EQ(2, a);
     EXPECT_EQ(1, b);
 }
+
+TEST(reverse, string) {
+    std::string s = "abc";
+
+    std::reverse(s.begin(), s.end());
+
+    EXPECT_EQ("cba", s);
+}
